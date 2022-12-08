@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "../App.css";
 const Page_2 = () => {
     
     const [mouvieList, setMouvieList] = useState([]);
@@ -19,7 +20,8 @@ const Page_2 = () => {
     }, []);
 
     return (
-        
+      <div className="App-header">
+      
       <div className="body">
       <Link style={{padding:"10px"}} to="/"><button>Home</button></Link>     
        {mouvieListFiltered.map((title, index) => {
@@ -39,6 +41,7 @@ const Page_2 = () => {
           )};
         })};
   
+      </div>
       </div>
     );
 };

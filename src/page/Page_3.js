@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "../App.css";
 const Page_3 = () => {
     const [mouvieList, setMouvieList] = useState([]);
     const [mouvieListFiltered, setMouvieListFiltered] = useState([]);
@@ -17,7 +18,7 @@ const Page_3 = () => {
       getData();
     }, []);
     return (
-        
+      <div className="App-header">
       <div className="body">
       <Link style={{padding:"10px"}} to="/"><button>Home</button></Link>    
        {mouvieListFiltered.map((title, index) => {
@@ -36,6 +37,7 @@ const Page_3 = () => {
           )};
         })};
   
+      </div>
       </div>
     );
 };
