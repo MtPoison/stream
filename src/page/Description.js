@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import "../App.css";
-const Page_5 = () => {
+const Description = () => {
   let { id } = useParams();
   const [title, setTitle] = useState('null');
 
@@ -17,16 +17,18 @@ const Page_5 = () => {
     setTitle(res.data.results);
   };
 
-
+// affiches les donnée du film
   return (
     <div className="App-header">
     
-      <Link style={{padding:"10px"}} to="/"><button>Home</button></Link>
-      <Link  to="/note"><button>Les plus populaires</button></Link>
-      <p style={{padding:"10px"}}>Nom : {title[id]?.title}</p> 
-      <p style={{padding:"10px"}}>synopsis : {title[id]?.release_date}</p>
-      <a><img className="image2" src={` https://image.tmdb.org/t/p/original/${title[id].backdrop_path}`}></img></a>  
-      <p style={{padding:"10px"}}>synopsis : {title[id]?.overview}</p>
+      <Link  to="/" ><button className="bouton2">Home</button></Link>
+      <Link  to="/note" ><button className="bouton2">Les plus populaires</button></Link>
+      <h3 className="info2">Nom : {title[id]?.title}</h3> 
+      <h3 className="info2">Date de sorti : {title[id]?.release_date}</h3>
+      <a><img className="image4" src={` https://image.tmdb.org/t/p/original/${title[id].backdrop_path}`}></img></a>  
+      <p className="info">synopsis :
+      <br></br> 
+      {title[id]?.overview}</p>
       
       
     </div>
@@ -34,4 +36,4 @@ const Page_5 = () => {
   );
 };
 
-export default Page_5;
+export default Description;

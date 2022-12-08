@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import "../App.css";
-const Page_4 = () => {
+const Info = () => {
   let { id } = useParams();
   const [title, setTitle] = useState('null');
 
@@ -21,13 +21,15 @@ const Page_4 = () => {
   return (
     <div className="App-header">
     <div className="body">
-      <Link  to="/"><button>Home</button></Link>
-      <Link  to="/populaire"><button>Les mieux notées</button></Link>
+      <Link  to="/" id="bouton" ><button className="bouton2">Home</button></Link>
+      <Link  to="/populaire" ><button className="bouton2">Les mieux notées</button></Link>
       
-      <p style={{padding:"10px"}}>Nom : {title[id]?.title}</p> 
-      <p style={{padding:"10px"}}>synopsis : {title[id]?.release_date}</p>
-      <a><img className="image2" src={` https://image.tmdb.org/t/p/original/${title[id].backdrop_path}`}></img></a>   
-      <p style={{padding:"10px"}}>synopsis : {title[id]?.overview}</p>
+      <h3 className="info2">Nom : {title[id]?.title}</h3> 
+      <h3 className="info2">synopsis : {title[id]?.release_date}</h3>
+      <a><img className="image4" src={` https://image.tmdb.org/t/p/original/${title[id]?.backdrop_path}`}></img></a>   
+      <p className="info">synopsis : 
+      <br></br>
+      {title[id]?.overview}</p>
      
       
     </div>
@@ -35,4 +37,4 @@ const Page_4 = () => {
   );
 };
 
-export default Page_4;
+export default Info;

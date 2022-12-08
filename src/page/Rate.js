@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-const Page_3 = () => {
+const Rate = () => {
     const [mouvieList, setMouvieList] = useState([]);
     const [mouvieListFiltered, setMouvieListFiltered] = useState([]);
     
@@ -20,18 +20,19 @@ const Page_3 = () => {
     return (
       <div className="App-header">
       <div className="body">
-      <Link style={{padding:"10px"}} to="/"><button>Home</button></Link>
+      <Link to="/" ><button className="bouton2">Home</button></Link>
+      <h3 className="populaire">Les films les mieux notés :</h3>
       <div className="body2">   
        {mouvieListFiltered.map((title, index) => {
         if(title.vote_average>=title.vote_average){
           return (
             
-            <p style={{padding:"10px"}} key={title.vote_average}>
+            <p key={title.vote_average}>
 
-              <Link  justify-content= "center" to={`/sysnopis2/${index}`}> 
-            <a><img className="image" src={` https://image.tmdb.org/t/p/original/${title.poster_path}`}></img></a>
+              <Link  justify-content= "center" to={`/description/${index}`}> 
+            <a><img className="image" src={` https://image.tmdb.org/t/p/original/${title?.poster_path}`}></img></a>
             <br></br>
-            <a href={`/sysnopis2/${index}`} target="_bank" className="lien"> {title.title}</a>
+            <a href={`/Description/${index}`} target="_bank" className="lien"> {title.title}</a>
             </Link>
               </p>
 
@@ -42,4 +43,4 @@ const Page_3 = () => {
       </div>
     );
 };
-export default Page_3
+export default Rate

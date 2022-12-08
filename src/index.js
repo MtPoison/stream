@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Home from './page/Home';
-import Page_1 from './page/Page_1';
-import Page_2 from "./page/Page_2";
-import Page_3 from "./page/Page_3";
-import Page_4 from "./page/Page_4";
-import Page_5 from "./page/Page_5";
+import Film from './page/Film';
+import Populaire from "./page/Populaire";
+import Rate from "./page/Rate";
+import Info from "./page/Info";
+import Description from "./page/Description";
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -23,27 +23,27 @@ const router = createBrowserRouter([
   },
   {
     path:"/film/:id",
-    element: <Page_1/>
+    element: <Film/>
   },
 
   {
     path:"/populaire",
-    element: <Page_2/>
+    element: <Populaire/>
   },
 
   {
     path:"/note",
-    element: <Page_3/>
+    element: <Rate/>
   },
   
   {
-    path:"/sysnopis/:id",
-    element: <Page_4/>
+    path:"/info/:id",
+    element: <Info/>
   },
 
   {
-    path:"/sysnopis2/:id",
-    element: <Page_5/>
+    path:"/description/:id",
+    element: <Description/>
   },
 
 ]);

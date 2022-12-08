@@ -1,3 +1,7 @@
+body {
+  background: url(../public/Illustration_espace.png);
+  background-size: cover;
+}
 
 
 .image{
@@ -5,19 +9,73 @@
   width: 100%;
   margin: auto;
  border-radius: 50px;
+  transition-duration: 2s;
 }
+
+.image:hover{
+  width: 109%;
+}
+
+.image2{
+
+  width: 90%;
+  margin: auto;
+ border-radius: 50px;
+  transition-duration: 2s;
+}
+
+.image2:hover{
+  width: 100%;
+}
+.image3{
+
+  width: 10%;
+  margin: auto;
+ border-radius: 50px;
+  transition-duration: 2s;
+ 
+}
+
+.image3:hover{
+  width: 15%;
+}
+
+.image4{
+  width: 30%;
+  margin: auto;
+ border-radius: 50px;
+ display: flex;
+
+}
+
 .App-header{
   
-  background-color: #FCACE6;
-  height: 100%;
-  /* position: absolute; */
-  padding: 5%;
+  
+  padding: 2%;
   min-height: 100vh;
+
 }
 .bouton{
   
   position: relative;
   left: 42.5%;
+  border-radius: 10px 100px / 120px;
+}
+.bouton2{
+  border-radius: 10px 100px / 120px;
+}
+
+Link{
+  border-radius: 10px 100px / 120px;
+}
+
+#sharbar{
+  position: relative;
+  left: 45.5%;
+  border-radius: 30px;
+  border: thick double #32a1ce;
+  block-size: auto;
+  writing-mode: horizontal-tb;
 }
 
 .lien{
@@ -27,15 +85,17 @@
 }
 
 .text{
-  color: brown;
+  font-family:'Courier New', Courier, monospace;
+  color: rgb(0, 0, 0);
   position: relative;
   left: 35%;
+  height: 50px;
 }
 
 .titre{
   
-  position: relative;
-  left: 50%;
+  display: flex;
+  justify-content: center;
 }
 .ligne{
   display: flex;
@@ -58,10 +118,28 @@
   width: 300px;
   height: 500px;
 }
-.image2{
-  width: 30%;
-  margin: auto;
- border-radius: 50px;
- display: flex;
 
+
+h1 {
+  font-family:'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+
+}
+.info{
+  display: flex;
+  text-align: center;
+  font-family: fantasy;
+  font-size: large;
+}
+.margin{
+  margin-bottom: 25%;
+}
+.populaire{
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+.info2{
+  display: flex;
+  justify-content: center;
 }
