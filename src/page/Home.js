@@ -46,7 +46,9 @@ const Home = () => {
       <a href={`http://localhost:3000/note/`}><button className="bouton">Les mieux notées</button></a>
       <br></br>
       <p  className="text">Ma liste :</p>
+      
       <p  className="text">Film : </p>
+      <div className="ligne">
       {mouvieListFiltered.map((title, index) => {
         return (
           
@@ -64,6 +66,7 @@ const Home = () => {
         );
       })}
 
+    </div>
     </div>
     
   );

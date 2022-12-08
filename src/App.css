@@ -1,15 +1,18 @@
+
+
 .image{
-  display: flex;
-  flex-direction: row;
-  width: 30%;
+
+  width: 100%;
   margin: auto;
  border-radius: 50px;
 }
 .App-header{
+  
   background-color: #FCACE6;
-
+  height: 100%;
   /* position: absolute; */
   padding: 5%;
+  min-height: 100vh;
 }
 .bouton{
   
@@ -18,7 +21,7 @@
 }
 
 .lien{
-  
+  display: flex;
   position: relative;
   justify-content: center;
 }
@@ -33,4 +36,32 @@
   
   position: relative;
   left: 50%;
+}
+.ligne{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ligne p {
+  width: 300px;
+  height: 500px;
+}
+
+.body2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.body2 p{
+  width: 300px;
+  height: 500px;
+}
+.image2{
+  width: 30%;
+  margin: auto;
+ border-radius: 50px;
+ display: flex;
+
 }

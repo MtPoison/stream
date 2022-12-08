@@ -22,13 +22,13 @@ const Page_1 = () => {
     <div className="App-header">
     <div className="body">
       <Link style={{padding:"10px"}} to="/"><button>Back</button></Link>
-      
+      <div className="body2">
       <p className="titre">Nom : {title[id]?.title}</p> 
       <p >date de sortie : {title[id]?.release_date}</p>
-      <a><img className="image" src={` https://image.tmdb.org/t/p/original/${title[id].backdrop_path}`}></img></a>  
+      <a><img className="image2" src={` https://image.tmdb.org/t/p/original/${title[id].backdrop_path}`}></img></a>  
       <p style={{padding:"10px"}}>synopsis : {title[id]?.overview}</p>
       
-      
+    </div>
     </div>
     </div>
   );

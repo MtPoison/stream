@@ -20,7 +20,8 @@ const Page_3 = () => {
     return (
       <div className="App-header">
       <div className="body">
-      <Link style={{padding:"10px"}} to="/"><button>Home</button></Link>    
+      <Link style={{padding:"10px"}} to="/"><button>Home</button></Link>
+      <div className="body2">   
        {mouvieListFiltered.map((title, index) => {
         if(title.vote_average>=title.vote_average){
           return (
@@ -36,7 +37,7 @@ const Page_3 = () => {
 
           )};
         })};
-  
+      </div> 
       </div>
       </div>
     );

@@ -23,9 +23,10 @@ const Page_4 = () => {
     <div className="body">
       <Link  to="/"><button>Home</button></Link>
       <Link  to="/populaire"><button>Les mieux notées</button></Link>
+      
       <p style={{padding:"10px"}}>Nom : {title[id]?.title}</p> 
       <p style={{padding:"10px"}}>synopsis : {title[id]?.release_date}</p>
-      <a><img className="image" src={` https://image.tmdb.org/t/p/original/${title[id].backdrop_path}`}></img></a>   
+      <a><img className="image2" src={` https://image.tmdb.org/t/p/original/${title[id].backdrop_path}`}></img></a>   
       <p style={{padding:"10px"}}>synopsis : {title[id]?.overview}</p>
      
       
