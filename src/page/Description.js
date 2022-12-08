@@ -25,7 +25,7 @@ const Description = () => {
       <Link  to="/note" ><button className="bouton2">Les plus populaires</button></Link>
       <h3 className="info2">Nom : {title[id]?.title}</h3> 
       <h3 className="info2">Date de sorti : {title[id]?.release_date}</h3>
-      <a><img className="image4" src={` https://image.tmdb.org/t/p/original/${title[id].backdrop_path}`}></img></a>  
+      <a><img className="image4" src={` https://image.tmdb.org/t/p/original/${title[id]?.backdrop_path}`}></img></a>  
       <p className="info">synopsis :
       <br></br> 
       {title[id]?.overview}</p>
