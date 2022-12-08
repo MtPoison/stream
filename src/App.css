@@ -1,13 +1,14 @@
 .image{
-  display: block;
+  display: flex;
+  flex-direction: row;
   width: 30%;
   margin: auto;
- 
+ border-radius: 50px;
 }
 .App-header{
   /* background-image: url("https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee-scaled.jpg"); */
 
-  position: absolute;
+  /* position: absolute; */
   padding: 5%;
 }
 .bouton{

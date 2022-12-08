@@ -19,11 +19,13 @@ const Page_1 = () => {
 
   return (
     <div className="body">
-      <Link style={{padding:"10px"}} to="/">Back</Link>
+      <Link style={{padding:"10px"}} to="/"><button>Back</button></Link>
       
-      <p style={{padding:"10px"}}>Nom : {title[id]?.title}</p>   
+      <p style={{padding:"10px"}}>Nom : {title[id]?.title}</p> 
+      <p style={{padding:"10px"}}>date de sortie : {title[id]?.release_date}</p>
+      <a><img className="image" src={` https://image.tmdb.org/t/p/original/${title[id].backdrop_path}`}></img></a>  
       <p style={{padding:"10px"}}>synopsis : {title[id]?.overview}</p>
-      <p style={{padding:"10px"}}>synopsis : {title[id]?.release_date}</p>
+      
       
     </div>
   );

@@ -21,7 +21,7 @@ const Page_2 = () => {
     return (
         
       <div className="body">
-      <Link style={{padding:"10px"}} to="/">Back</Link>    
+      <Link style={{padding:"10px"}} to="/"><button>Home</button></Link>     
        {mouvieListFiltered.map((title, index) => {
         if(title.vote_average>=title.vote_average){
           return (

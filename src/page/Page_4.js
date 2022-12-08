@@ -19,8 +19,8 @@ const Page_4 = () => {
 
   return (
     <div className="body">
-      <Link style={{padding:"10px"}} to="/">Back</Link>
-      
+      <Link  to="/"><button>Home</button></Link>
+      <Link  to="/populaire"><button>Les mieux notées</button></Link>
       <p style={{padding:"10px"}}>Nom : {title[id]?.title}</p>   
       <p style={{padding:"10px"}}>synopsis : {title[id]?.overview}</p>
       <p style={{padding:"10px"}}>synopsis : {title[id]?.release_date}</p>
