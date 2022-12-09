@@ -25,7 +25,7 @@ const Info = () => {
       <Link  to="/populaire" ><button className="bouton2">Les mieux notées</button></Link>
       
       <h3 className="info2">Nom : {title[id]?.title}</h3> 
-      <h3 className="info2">synopsis : {title[id]?.release_date}</h3>
+      <h3 className="info2">Date de sortie : {title[id]?.release_date}</h3>
       <a><img className="image4" src={` https://image.tmdb.org/t/p/original/${title[id]?.backdrop_path}`}></img></a>   
       <p className="info">synopsis : 
       <br></br>

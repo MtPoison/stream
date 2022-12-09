@@ -49,7 +49,7 @@ const Home = () => {
         <h1 className="titre">Streamspace</h1>
       < input onChange={handleChange} type="bouton" className="bouton" id="sharbar" />
       <br></br>
-      <h3 className="text">Cartégorie : </h3>
+      <h3 className="text">Catégorie : </h3>
       <br></br>
       <a href={`http://localhost:3000/populaire/`}><button className="bouton">Les plus polaires</button></a>
       
