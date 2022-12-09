@@ -130,6 +130,8 @@ h1 {
   text-align: center;
   font-family: fantasy;
   font-size: large;
+  justify-content: center;
+  align-items: center;
 }
 .margin{
   margin-bottom: 25%;
